@@ -9,117 +9,31 @@
     <meta name="author" content="Anna Borisenko">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.png">
 </head>
 
 <body>
-<h2 class="fade-out">Завдання 1 – Блок 1</h2>
-<p class="fade-out">Створити функцію, яка виводить текст з різним розміром шрифту.
-    Функція має два аргументи: текстовий рядок і розмір шрифту.
-    Використовуйте style-властивість fontSize</p>
-<p class="fade-out">Результат роботи функції:</p>
-<div id="block1_task1">
-
-</div>
-<h2 class="fade-out">Завдання 2 – Блок 1</h2>
-<p class="fade-out">Використовуючи властивості елемента IMG style.top і style.left,
-    зробіть сторінку, на якій невелика картинка кожну секунду виникає в новому
-    місці екрану. Використовуйте setInterval.</p>
-<p class="fade-out">Результат роботи функції: зображення хлопчика, що виникає в різних місцях сторінки </p>
-<div id="block1_task2">
-
-</div>
-<h2 class="fade-out">Завдання 3 – Блок 1</h2>
-<p class="fade-out"> Знайти на сторінці всі '<'p'>' і змінити їх розмір на 15px.
-    Використовувати getElementsByTagName, setAttribute</p>
-<p class="fade-out">Результат роботи функції:</p>
-<div id="block1_task3">
-
-</div>
-<h2 class="fade-out">Завдання 4 – Блок 1</h2>
-<p class="fade-out"> Текстовий годинник – використовувати функції setInterval або
-    setTimeout об'єкта window.</p>
-<p class="fade-out">Результат роботи функції:</p>
-<div id="block1_task4">
-
-</div>
-<h2 class="fade-out">Завдання 5 – Блок 1</h2>
-<p class="fade-out"> Створити ефект поступового витирання (аналог фільтра) частини
-    документа, використовуючи таймер.</p>
-<p class="fade-out">Результат роботи функції:</p>
-<div id="block1_task5">
-
-</div>
-<h2>Завдання 1 – Блок 2</h2>
-<p>Реалізуйте спливаючу при натисканні підказку. Підказка сама повинна
-    визначати напрями спливання, щоб не піти за межі екрану. При натисканні на
-    будь-яке місце екрану (крім підказки) вона повинна сховатися.
-</p>
-<p>Результат роботи функції:</p>
-<div id="block2_task1">
-    Click here to show tooltip
-</div>
-
-<div id="tooltip"></div>
-<h2>Завдання 2 – Блок 2</h2>
-<p>Дана таблиця. Зробіть так, щоб можна було міняти колонки таблиці
-    місцями.
-</p>
-<p class="fade-out">Результат роботи функції:</p>
-<div id="block2_task2">
-    <table id="myTable">
-        <thead>
-        <tr>
-            <th>Колонка 1</th>
-            <th>Колонка 2</th>
-            <th>Колонка 3</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Рядок 1, Колонка 1</td>
-            <td>Рядок 1, Колонка 2</td>
-            <td>Рядок 1, Колонка 3</td>
-        </tr>
-        <tr>
-            <td>Рядок 2, Колонка 1</td>
-            <td>Рядок 2, Колонка 2</td>
-            <td>Рядок 2, Колонка 3</td>
-        </tr>
-        </tbody>
-    </table>
-    <div>
-        <label for="columnIndex">Індекс колонки:</label>
-        <input type="number" id="columnIndex" min="0">
-        <button id="moveLeft">←</button>
-        <button id="moveRight">→</button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-md-5 btn btn-outline-info">col 1 1</div>
+        <div class="col col-md-5 btn btn-outline-info">col 1 2</div>
+    </div>
+    <div class="row">
+        <div class="row w-100 justify-content-center">
+            <div class="col-5 btn btn-outline-info d-none d-sm-block">col 2 1 1</div>
+            <div class="col-5 btn btn-outline-info">col 2 1 2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7 btn btn-outline-info d-none d-sm-block">col 3 1</div>
+        <div class="col btn btn-outline-info">col 3 2</div>
+        <div class="col btn btn-outline-info">col 3 3</div>
     </div>
 </div>
-<h2>Завдання 3 – Блок 2</h2>
-<p> У лівому верхньому кутку екрану - список з п'яти кольорів. У правому
-    верхньому куті - чорний квадрат. Колір квадрата можна поміняти,
-    використовуючи список.
-</p>
-<p>Результат роботи функції:</p>
-<div id="block2_task3">
-    <div id="colorSelector">
-        <input type="color" id="colorInput">
-    </div>
-
-    <div id="square"></div>
-</div>
-<h2>Завдання 4 – Блок 2</h2>
-<p> Створіть сторінку, на якій в DIV-блок будуть виводиться поточні
-    координати курсору мишки і код натиснутоюклавіші на клавіатурі.
-</p>
-<p>Результат роботи функції:</p>
-<div id="block2_task4">
-    Поточні координати курсору миші: <span id="mouseCoordinates"></span><br>
-    Остання натиснута клавіша: <span id="lastKeyPressed"></span>
-</div>
-
+<script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 
